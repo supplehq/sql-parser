@@ -1,5 +1,5 @@
 {
-  "name": "@shync/sql-parser",
+  "name": "@supple/sql-parser",
   "description": "JavaScript implentation of SQLite 3 query parser",
   "author": "Code School (http://codeschool.com)",
   "version": "0.0.1-0",
