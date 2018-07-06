@@ -2,11 +2,12 @@
   "name": "@supple/sql-parser",
   "description": "JavaScript implentation of SQLite 3 query parser",
   "author": "Code School (http://codeschool.com)",
-  "version": "0.0.1-2",
+  "version": "0.0.1-3",
   "contributors": [
     "Nick Wronski <nick@javascript.com>",
     "Joonsung Um <joonsung.um@supple.kr>"
   ],
+  "homepage": "https://supplehq.github.io/sql-parser/",
   "keywords": [
     "sql",
     "sqlite",
@@ -25,8 +26,10 @@
   },
   "browser": "dist/sqlite-parser.js",
   "scripts": {
+    "prepublish": "yarn deploy",
     "test": "grunt test",
-    "build": "grunt release"
+    "build": "grunt release",
+    "deploy": "yarn build && gh-pages -d demo"
   },
   "engines": {
     "node": ">=4"
@@ -40,9 +43,9 @@
     "CHANGELOG.md",
     "README.md"
   ],
-  "repository": "git@github.com:codeschool/sqlite-parser.git",
+  "repository": "git@github.com:supplehq/sql-parser.git",
   "bugs": {
-    "url": "https://github.com/codeschool/sqlite-parser/issues"
+    "url": "https://github.com/supplehq/sql-parser/issues"
   },
   "devDependencies": {
     "babel-core": "^6.17.0",
@@ -51,6 +54,7 @@
     "bluebird": "^3.4.6",
     "chai": "^3.5.0",
     "codemirror": "^5.19.0",
+    "gh-pages": "^1.2.0",
     "glob": "^7.1.0",
     "grunt": "^1.0.1",
     "grunt-babel": "^6.0.0",
