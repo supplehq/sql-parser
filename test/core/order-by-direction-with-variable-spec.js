@@ -1,6 +1,6 @@
 import * as tree from '../misc/helpers';
 
-describe('shync', function() {
+describe('select', function() {
 
   it('basic order by direction', function(done) {
     tree.equals(this, done);
