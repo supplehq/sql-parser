@@ -2,7 +2,7 @@
   "name": "@supple/sql-parser",
   "description": "JavaScript implentation of SQLite 3 query parser",
   "author": "Code School (http://codeschool.com)",
-  "version": "0.0.1-0",
+  "version": "0.0.1-1",
   "contributors": [
     "Nick Wronski <nick@javascript.com>",
     "Joonsung Um <joonsung.um@supple.kr>"
