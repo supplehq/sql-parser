@@ -1,0 +1,526 @@
+{
+  "type": "statement",
+  "variant": "list",
+  "statement": [
+    {
+      "type": "statement",
+      "variant": "select",
+      "result": [
+        {
+          "type": "identifier",
+          "variant": "star",
+          "name": "*"
+        }
+      ],
+      "from": {
+        "type": "identifier",
+        "variant": "table",
+        "name": "bananas"
+      },
+      "where": [
+        {
+          "type": "expression",
+          "format": "binary",
+          "variant": "operation",
+          "operation": "=",
+          "left": {
+            "type": "identifier",
+            "variant": "column",
+            "name": "color"
+          },
+          "right": {
+            "type": "literal",
+            "variant": "text",
+            "value": "red"
+          }
+        }
+      ],
+      "order": [
+        {
+          "direction": "asc",
+          "expression": {
+          "name": "test",
+          "type": "identifier",
+            "variant": "column"
+          },
+          "type": "expression",
+          "variant": "order"
+        }
+      ]
+    },
+    {
+      "type": "statement",
+      "variant": "select",
+      "result": [
+        {
+          "type": "identifier",
+          "variant": "star",
+          "name": "*"
+        }
+      ],
+      "from": {
+        "type": "identifier",
+        "variant": "table",
+        "name": "bananas"
+      },
+      "where": [
+        {
+          "type": "expression",
+          "format": "binary",
+          "variant": "operation",
+          "operation": "=",
+          "left": {
+            "type": "identifier",
+            "variant": "column",
+            "name": "color"
+          },
+          "right": {
+            "type": "literal",
+            "variant": "text",
+            "value": "red"
+          }
+        }
+      ],
+      "order": [
+        {
+          "direction": "desc",
+          "expression": {
+          "name": "test",
+          "type": "identifier",
+            "variant": "column"
+          },
+          "type": "expression",
+          "variant": "order"
+        }
+      ]
+    },
+    {
+      "type": "statement",
+      "variant": "select",
+      "result": [
+        {
+          "type": "identifier",
+          "variant": "star",
+          "name": "*"
+        }
+      ],
+      "from": {
+        "type": "identifier",
+        "variant": "table",
+        "name": "bananas"
+      },
+      "where": [
+        {
+          "type": "expression",
+          "format": "binary",
+          "variant": "operation",
+          "operation": "=",
+          "left": {
+            "type": "identifier",
+            "variant": "column",
+            "name": "color"
+          },
+          "right": {
+            "type": "literal",
+            "variant": "text",
+            "value": "red"
+          }
+        }
+      ],
+      "order": [
+        {
+          "direction": "asc",
+          "expression": {
+          "name": "test1",
+          "type": "identifier",
+            "variant": "column"
+          },
+          "type": "expression",
+          "variant": "order"
+        },
+        {
+          "name": "test2",
+          "type": "identifier",
+          "variant": "column"
+        }
+      ]
+    },
+    {
+      "type": "statement",
+      "variant": "select",
+      "result": [
+        {
+          "type": "identifier",
+          "variant": "star",
+          "name": "*"
+        }
+      ],
+      "from": {
+        "type": "identifier",
+        "variant": "table",
+        "name": "bananas"
+      },
+      "where": [
+        {
+          "type": "expression",
+          "format": "binary",
+          "variant": "operation",
+          "operation": "=",
+          "left": {
+            "type": "identifier",
+            "variant": "column",
+            "name": "color"
+          },
+          "right": {
+            "type": "literal",
+            "variant": "text",
+            "value": "red"
+          }
+        }
+      ],
+      "order": [
+        {
+          "name": "test1",
+          "type": "identifier",
+          "variant": "column"
+        },
+        {
+          "direction": "asc",
+          "expression": {
+            "name": "test2",
+            "type": "identifier",
+            "variant": "column"
+          },
+          "type": "expression",
+          "variant": "order"
+        }
+      ]
+    },
+    {
+      "type": "statement",
+      "variant": "select",
+      "result": [
+        {
+          "type": "identifier",
+          "variant": "star",
+          "name": "*"
+        }
+      ],
+      "from": {
+        "type": "identifier",
+        "variant": "table",
+        "name": "bananas"
+      },
+      "where": [
+        {
+          "type": "expression",
+          "format": "binary",
+          "variant": "operation",
+          "operation": "=",
+          "left": {
+            "type": "identifier",
+            "variant": "column",
+            "name": "color"
+          },
+          "right": {
+            "type": "literal",
+            "variant": "text",
+            "value": "red"
+          }
+        }
+      ],
+      "order": [
+        {
+          "direction": "desc",
+          "expression": {
+          "name": "test1",
+          "type": "identifier",
+            "variant": "column"
+          },
+          "type": "expression",
+          "variant": "order"
+        },
+        {
+          "name": "test2",
+          "type": "identifier",
+          "variant": "column"
+        }
+      ]
+    },
+    {
+      "type": "statement",
+      "variant": "select",
+      "result": [
+        {
+          "type": "identifier",
+          "variant": "star",
+          "name": "*"
+        }
+      ],
+      "from": {
+        "type": "identifier",
+        "variant": "table",
+        "name": "bananas"
+      },
+      "where": [
+        {
+          "type": "expression",
+          "format": "binary",
+          "variant": "operation",
+          "operation": "=",
+          "left": {
+            "type": "identifier",
+            "variant": "column",
+            "name": "color"
+          },
+          "right": {
+            "type": "literal",
+            "variant": "text",
+            "value": "red"
+          }
+        }
+      ],
+      "order": [
+        {
+          "name": "test1",
+          "type": "identifier",
+          "variant": "column"
+        },
+        {
+          "direction": "desc",
+          "expression": {
+          "name": "test2",
+          "type": "identifier",
+            "variant": "column"
+          },
+          "type": "expression",
+          "variant": "order"
+        }
+      ]
+    },
+    {
+      "type": "statement",
+      "variant": "select",
+      "result": [
+        {
+          "type": "identifier",
+          "variant": "star",
+          "name": "*"
+        }
+      ],
+      "from": {
+        "type": "identifier",
+        "variant": "table",
+        "name": "bananas"
+      },
+      "where": [
+        {
+          "type": "expression",
+          "format": "binary",
+          "variant": "operation",
+          "operation": "=",
+          "left": {
+            "type": "identifier",
+            "variant": "column",
+            "name": "color"
+          },
+          "right": {
+            "type": "literal",
+            "variant": "text",
+            "value": "red"
+          }
+        }
+      ],
+      "order": [
+        {
+          "direction": "asc",
+          "expression": {
+          "name": "test1",
+          "type": "identifier",
+            "variant": "column"
+          },
+          "type": "expression",
+          "variant": "order"
+        },
+        {
+          "direction": "asc",
+          "expression": {
+          "name": "test2",
+          "type": "identifier",
+            "variant": "column"
+          },
+          "type": "expression",
+          "variant": "order"
+        }
+      ]
+    },
+    {
+      "type": "statement",
+      "variant": "select",
+      "result": [
+        {
+          "type": "identifier",
+          "variant": "star",
+          "name": "*"
+        }
+      ],
+      "from": {
+        "type": "identifier",
+        "variant": "table",
+        "name": "bananas"
+      },
+      "where": [
+        {
+          "type": "expression",
+          "format": "binary",
+          "variant": "operation",
+          "operation": "=",
+          "left": {
+            "type": "identifier",
+            "variant": "column",
+            "name": "color"
+          },
+          "right": {
+            "type": "literal",
+            "variant": "text",
+            "value": "red"
+          }
+        }
+      ],
+      "order": [
+        {
+          "direction": "asc",
+          "expression": {
+          "name": "test1",
+          "type": "identifier",
+            "variant": "column"
+          },
+          "type": "expression",
+          "variant": "order"
+        },
+        {
+          "direction": "desc",
+          "expression": {
+          "name": "test2",
+          "type": "identifier",
+            "variant": "column"
+          },
+          "type": "expression",
+          "variant": "order"
+        }
+      ]
+    },
+    {
+      "type": "statement",
+      "variant": "select",
+      "result": [
+        {
+          "type": "identifier",
+          "variant": "star",
+          "name": "*"
+        }
+      ],
+      "from": {
+        "type": "identifier",
+        "variant": "table",
+        "name": "bananas"
+      },
+      "where": [
+        {
+          "type": "expression",
+          "format": "binary",
+          "variant": "operation",
+          "operation": "=",
+          "left": {
+            "type": "identifier",
+            "variant": "column",
+            "name": "color"
+          },
+          "right": {
+            "type": "literal",
+            "variant": "text",
+            "value": "red"
+          }
+        }
+      ],
+      "order": [
+        {
+          "direction": "desc",
+          "expression": {
+          "name": "test1",
+          "type": "identifier",
+            "variant": "column"
+          },
+          "type": "expression",
+          "variant": "order"
+        },
+        {
+          "direction": "asc",
+          "expression": {
+          "name": "test2",
+          "type": "identifier",
+            "variant": "column"
+          },
+          "type": "expression",
+          "variant": "order"
+        }
+      ]
+    },
+    {
+      "type": "statement",
+      "variant": "select",
+      "result": [
+        {
+          "type": "identifier",
+          "variant": "star",
+          "name": "*"
+        }
+      ],
+      "from": {
+        "type": "identifier",
+        "variant": "table",
+        "name": "bananas"
+      },
+      "where": [
+        {
+          "type": "expression",
+          "format": "binary",
+          "variant": "operation",
+          "operation": "=",
+          "left": {
+            "type": "identifier",
+            "variant": "column",
+            "name": "color"
+          },
+          "right": {
+            "type": "literal",
+            "variant": "text",
+            "value": "red"
+          }
+        }
+      ],
+      "order": [
+        {
+          "direction": "desc",
+          "expression": {
+          "name": "test1",
+          "type": "identifier",
+            "variant": "column"
+          },
+          "type": "expression",
+          "variant": "order"
+        },
+        {
+          "direction": "desc",
+          "expression": {
+          "name": "test2",
+          "type": "identifier",
+            "variant": "column"
+          },
+          "type": "expression",
+          "variant": "order"
+        }
+      ]
+    }
+  ]
+}

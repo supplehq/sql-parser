@@ -2133,10 +2133,10 @@ column_collate_loop
   }
 
 primary_column_dir "Column Direction"
-  = t:( ASC / DESC ) o
+  = t:( ASC / DESC / bind_parameter ) o
   {
     return {
-      'direction': keyNode(t),
+      'direction': t.type === "variable" ? t : keyNode(t),
     };
   }
 

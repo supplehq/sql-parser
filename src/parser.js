@@ -1323,7 +1323,7 @@ function peg$parse(input, options) {
     peg$otherExpectation("Column Direction"),
     function(t) {
         return {
-          'direction': keyNode(t),
+          'direction': t.type === "variable" ? t : keyNode(t),
         };
       },
     function(s, t) {
@@ -2422,7 +2422,7 @@ function peg$parse(input, options) {
     peg$decode("%;\xE8/\\#%<%;\u023F/8#;\u01B3.) &;\u01A1.# &;\u012F/#$+\")(\"'#&'#=/##&'!&&#/($8\":p\"!!)(\"'#&'#.# &;p"),
     peg$decode("<%$;\u012E/&#0#*;\u012E&&&#/' 8!:\u0178!! )=.\" 7\u0177"),
     peg$decode("%;\u01CB/C#;\u023F/:$;\u0181/1$;\u023F/($8$:p$!!)($'#(#'#(\"'#&'#"),
-    peg$decode("<%;\u01C0.# &;\u01DA/1#;\u023F/($8\":\u017A\"!!)(\"'#&'#=.\" 7\u0179"),
+    peg$decode("<%;\u01C0.) &;\u01DA.# &;?/1#;\u023F/($8\":\u017A\"!!)(\"'#&'#=.\" 7\u0179"),
     peg$decode("%;\u0131/;#;\xDC/2$;\u023F/)$8#:\u017B#\"\"!)(#'#(\"'#&'#"),
     peg$decode("<%;\u0209/D#;\u023F/;$;\u01CE/2$;\u023F/)$8$:\u017D$\"#!)($'#(#'#(\"'#&'#=.\" 7\u017C"),
     peg$decode("%;\u01CA/;#;\u023F/2$;L/)$8#:\u017E#\"\" )(#'#(\"'#&'#"),
