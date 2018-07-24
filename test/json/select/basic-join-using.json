@@ -1,0 +1,74 @@
+{
+  "type": "statement",
+  "variant": "list",
+  "statement": [
+    {
+      "type": "statement",
+      "variant": "select",
+      "result": [
+        {
+          "type": "identifier",
+          "variant": "star",
+          "name": "*"
+        }
+      ],
+      "from": {
+        "type": "map",
+        "variant": "join",
+        "source": {
+          "type": "identifier",
+          "variant": "table",
+          "name": "bananas"
+        },
+        "map": [
+          {
+            "type": "join",
+            "variant": "join",
+            "source": {
+              "type": "identifier",
+              "variant": "table",
+              "name": "apples"
+            },
+            "constraint": {
+              "type": "constraint",
+              "variant": "join",
+              "format": "using",
+              "using": {
+                "columns": [
+                  {
+                    "type": "identifier",
+                    "variant": "column",
+                    "name": "color"
+                  },
+                  {
+                    "type": "identifier",
+                    "variant": "column",
+                    "name": "shape"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "where": [
+        {
+          "type": "expression",
+          "format": "binary",
+          "variant": "operation",
+          "operation": "=",
+          "left": {
+            "type": "identifier",
+            "variant": "column",
+            "name": "color"
+          },
+          "right": {
+            "type": "literal",
+            "variant": "text",
+            "value": "red"
+          }
+        }
+      ]
+    }
+  ]
+}

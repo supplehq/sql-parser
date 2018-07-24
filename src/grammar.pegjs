@@ -1611,7 +1611,7 @@ insert_results "VALUES Clause"
   }
 
 loop_columns "Column List"
-  = sym_popen f:( loop_name ) o b:( loop_column_tail )* sym_pclose
+  = sym_popen f:( loop_name / bind_parameter ) o b:( loop_column_tail )* sym_pclose
   {
     return {
       'columns': flattenAll([ f, b ])
@@ -1619,7 +1619,7 @@ loop_columns "Column List"
   }
 
 loop_column_tail
-  = sym_comma c:( loop_name ) o
+  = sym_comma c:( loop_name / bind_parameter ) o
   { return c; }
 
 loop_name "Column Name"
