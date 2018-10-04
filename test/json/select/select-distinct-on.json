@@ -1,0 +1,106 @@
+{
+  "type": "statement",
+  "variant": "list",
+  "statement": [
+    {
+      "type": "statement",
+      "variant": "select",
+      "result": [
+        {
+          "type": "identifier",
+          "variant": "column",
+          "name": "column_2"
+        }
+      ],
+      "distinct": true,
+      "distinct_on": {
+        "type": "expression",
+        "variant": "list",
+        "expression": [
+          {
+            "type": "identifier",
+            "variant": "column",
+            "name": "column_1"
+          }
+        ]
+      },
+      "from": {
+        "type": "identifier",
+        "variant": "table",
+        "name": "tbl_name"
+      },
+      "order": [
+        {
+          "type": "identifier",
+          "variant": "column",
+          "name": "column_1"
+        },
+        {
+          "type": "identifier",
+          "variant": "column",
+          "name": "column_2"
+        }
+      ]
+    },
+    {
+      "type": "statement",
+      "variant": "select",
+      "result": [
+        {
+          "type": "identifier",
+          "variant": "column",
+          "name": "column_3"
+        },
+        {
+          "type": "identifier",
+          "variant": "column",
+          "name": "column_4"
+        }
+      ],
+      "distinct": true,
+      "distinct_on": {
+        "type": "expression",
+        "variant": "list",
+        "expression": [
+          {
+            "type": "identifier",
+            "variant": "column",
+            "name": "column_1"
+          },
+          {
+            "type": "identifier",
+            "variant": "column",
+            "name": "column_2"
+          }
+        ]
+      },
+      "from": {
+        "type": "identifier",
+        "variant": "table",
+        "name": "tbl_name"
+      },
+      "order": [
+        {
+          "type": "identifier",
+          "variant": "column",
+          "name": "column_1"
+        },
+        {
+          "type": "identifier",
+          "variant": "column",
+          "name": "column_2"
+        },
+        {
+          "type": "identifier",
+          "variant": "column",
+          "name": "column_3"
+        },
+        {
+          "type": "identifier",
+          "variant": "column",
+          "name": "column_4"
+        }
+      ]
+    }
+  ]
+}

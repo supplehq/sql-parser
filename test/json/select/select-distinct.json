@@ -1,0 +1,45 @@
+{
+  "type": "statement",
+  "variant": "list",
+  "statement": [
+    {
+      "type": "statement",
+      "variant": "select",
+      "result": [
+        {
+          "type": "identifier",
+          "variant": "column",
+          "name": "column_1"
+        }
+      ],
+      "distinct": true,
+      "from": {
+        "type": "identifier",
+        "variant": "table",
+        "name": "tbl_name"
+      }
+    },
+    {
+      "type": "statement",
+      "variant": "select",
+      "result": [
+        {
+          "type": "identifier",
+          "variant": "column",
+          "name": "column_1"
+        },
+        {
+          "type": "identifier",
+          "variant": "column",
+          "name": "column_2"
+        }
+      ],
+      "distinct": true,
+      "from": {
+        "type": "identifier",
+        "variant": "table",
+        "name": "tbl_name"
+      }
+    }
+  ]
+}

@@ -1256,10 +1256,18 @@ select_modifier "SELECT Results Modifier"
   / select_modifier_all
 
 select_modifier_distinct
-  = s:( DISTINCT ) o
+  = s:( DISTINCT ) o l:( distinct_on )? o
+  {
+    return Object.assign({
+      'distinct': true,
+    }, l);
+  }
+
+distinct_on "DISTINCT ON Clause"
+  = s:( ON ) o e:( expression_list_wrapped )
   {
     return {
-      'distinct': true
+      'distinct_on': e
     };
   }
 
