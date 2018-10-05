@@ -1538,8 +1538,8 @@
           "type": "expression",
           "format": "binary",
           "variant": "operation",
-          "operation": "like",
-          "right": {
+          "operation": "and",
+          "left": {
             "type": "expression",
             "format": "binary",
             "variant": "operation",
@@ -1548,27 +1548,16 @@
               "type": "expression",
               "format": "binary",
               "variant": "operation",
-              "operation": "and",
-              "left": {
+              "operation": "like",
+              "right": {
                 "type": "literal",
                 "variant": "text",
                 "value": "%bach%"
               },
-              "right": {
-                "type": "expression",
-                "format": "binary",
-                "variant": "operation",
-                "operation": "=",
-                "left": {
-                  "type": "identifier",
-                  "variant": "column",
-                  "name": "composer.cid"
-                },
-                "right": {
-                  "type": "identifier",
-                  "variant": "column",
-                  "name": "track.cid"
-                }
+              "left": {
+                "type": "identifier",
+                "variant": "column",
+                "name": "cname"
               }
             },
             "right": {
@@ -1579,19 +1568,30 @@
               "left": {
                 "type": "identifier",
                 "variant": "column",
-                "name": "album.aid"
+                "name": "composer.cid"
               },
               "right": {
                 "type": "identifier",
                 "variant": "column",
-                "name": "track.aid"
+                "name": "track.cid"
               }
             }
           },
-          "left": {
-            "type": "identifier",
-            "variant": "column",
-            "name": "cname"
+          "right": {
+            "type": "expression",
+            "format": "binary",
+            "variant": "operation",
+            "operation": "=",
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "album.aid"
+            },
+            "right": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "track.aid"
+            }
           }
         }
       ]
@@ -1641,8 +1641,8 @@
           "type": "expression",
           "format": "binary",
           "variant": "operation",
-          "operation": "like",
-          "right": {
+          "operation": "and",
+          "left": {
             "type": "expression",
             "format": "binary",
             "variant": "operation",
@@ -1651,27 +1651,16 @@
               "type": "expression",
               "format": "binary",
               "variant": "operation",
-              "operation": "and",
-              "left": {
+              "operation": "like",
+              "right": {
                 "type": "literal",
                 "variant": "text",
                 "value": "%bach%"
               },
-              "right": {
-                "type": "expression",
-                "format": "binary",
-                "variant": "operation",
-                "operation": "=",
-                "left": {
-                  "type": "identifier",
-                  "variant": "column",
-                  "name": "composer.cid"
-                },
-                "right": {
-                  "type": "identifier",
-                  "variant": "column",
-                  "name": "track.cid"
-                }
+              "left": {
+                "type": "identifier",
+                "variant": "column",
+                "name": "cname"
               }
             },
             "right": {
@@ -1682,19 +1671,30 @@
               "left": {
                 "type": "identifier",
                 "variant": "column",
-                "name": "album.aid"
+                "name": "composer.cid"
               },
               "right": {
                 "type": "identifier",
                 "variant": "column",
-                "name": "track.aid"
+                "name": "track.cid"
               }
             }
           },
-          "left": {
-            "type": "identifier",
-            "variant": "column",
-            "name": "cname"
+          "right": {
+            "type": "expression",
+            "format": "binary",
+            "variant": "operation",
+            "operation": "=",
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "album.aid"
+            },
+            "right": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "track.aid"
+            }
           }
         }
       ]
@@ -1744,8 +1744,8 @@
           "type": "expression",
           "format": "binary",
           "variant": "operation",
-          "operation": "like",
-          "right": {
+          "operation": "and",
+          "left": {
             "type": "expression",
             "format": "binary",
             "variant": "operation",
@@ -1754,41 +1754,16 @@
               "type": "expression",
               "format": "binary",
               "variant": "operation",
-              "operation": "and",
-              "left": {
+              "operation": "like",
+              "right": {
                 "type": "literal",
                 "variant": "text",
                 "value": "%bach%"
               },
-              "right": {
-                "type": "function",
-                "name": {
-                  "type": "identifier",
-                  "variant": "function",
-                  "name": "unlikely"
-                },
-                "args": {
-                  "type": "expression",
-                  "variant": "list",
-                  "expression": [
-                    {
-                      "type": "expression",
-                      "format": "binary",
-                      "variant": "operation",
-                      "operation": "=",
-                      "left": {
-                        "type": "identifier",
-                        "variant": "column",
-                        "name": "composer.cid"
-                      },
-                      "right": {
-                        "type": "identifier",
-                        "variant": "column",
-                        "name": "track.cid"
-                      }
-                    }
-                  ]
-                }
+              "left": {
+                "type": "identifier",
+                "variant": "column",
+                "name": "cname"
               }
             },
             "right": {
@@ -1810,22 +1785,47 @@
                     "left": {
                       "type": "identifier",
                       "variant": "column",
-                      "name": "album.aid"
+                      "name": "composer.cid"
                     },
                     "right": {
                       "type": "identifier",
                       "variant": "column",
-                      "name": "track.aid"
+                      "name": "track.cid"
                     }
                   }
                 ]
               }
             }
           },
-          "left": {
-            "type": "identifier",
-            "variant": "column",
-            "name": "cname"
+          "right": {
+            "type": "function",
+            "name": {
+              "type": "identifier",
+              "variant": "function",
+              "name": "unlikely"
+            },
+            "args": {
+              "type": "expression",
+              "variant": "list",
+              "expression": [
+                {
+                  "type": "expression",
+                  "format": "binary",
+                  "variant": "operation",
+                  "operation": "=",
+                  "left": {
+                    "type": "identifier",
+                    "variant": "column",
+                    "name": "album.aid"
+                  },
+                  "right": {
+                    "type": "identifier",
+                    "variant": "column",
+                    "name": "track.aid"
+                  }
+                }
+              ]
+            }
           }
         }
       ]
@@ -1875,8 +1875,8 @@
           "type": "expression",
           "format": "binary",
           "variant": "operation",
-          "operation": "like",
-          "right": {
+          "operation": "and",
+          "left": {
             "type": "expression",
             "format": "binary",
             "variant": "operation",
@@ -1885,41 +1885,16 @@
               "type": "expression",
               "format": "binary",
               "variant": "operation",
-              "operation": "and",
-              "left": {
+              "operation": "like",
+              "right": {
                 "type": "literal",
                 "variant": "text",
                 "value": "%bach%"
               },
-              "right": {
-                "type": "function",
-                "name": {
-                  "type": "identifier",
-                  "variant": "function",
-                  "name": "unlikely"
-                },
-                "args": {
-                  "type": "expression",
-                  "variant": "list",
-                  "expression": [
-                    {
-                      "type": "expression",
-                      "format": "binary",
-                      "variant": "operation",
-                      "operation": "=",
-                      "left": {
-                        "type": "identifier",
-                        "variant": "column",
-                        "name": "composer.cid"
-                      },
-                      "right": {
-                        "type": "identifier",
-                        "variant": "column",
-                        "name": "track.cid"
-                      }
-                    }
-                  ]
-                }
+              "left": {
+                "type": "identifier",
+                "variant": "column",
+                "name": "cname"
               }
             },
             "right": {
@@ -1941,22 +1916,47 @@
                     "left": {
                       "type": "identifier",
                       "variant": "column",
-                      "name": "album.aid"
+                      "name": "composer.cid"
                     },
                     "right": {
                       "type": "identifier",
                       "variant": "column",
-                      "name": "track.aid"
+                      "name": "track.cid"
                     }
                   }
                 ]
               }
             }
           },
-          "left": {
-            "type": "identifier",
-            "variant": "column",
-            "name": "cname"
+          "right": {
+            "type": "function",
+            "name": {
+              "type": "identifier",
+              "variant": "function",
+              "name": "unlikely"
+            },
+            "args": {
+              "type": "expression",
+              "variant": "list",
+              "expression": [
+                {
+                  "type": "expression",
+                  "format": "binary",
+                  "variant": "operation",
+                  "operation": "=",
+                  "left": {
+                    "type": "identifier",
+                    "variant": "column",
+                    "name": "album.aid"
+                  },
+                  "right": {
+                    "type": "identifier",
+                    "variant": "column",
+                    "name": "track.aid"
+                  }
+                }
+              ]
+            }
           }
         }
       ]

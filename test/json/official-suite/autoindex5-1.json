@@ -1069,38 +1069,38 @@
               "type": "expression",
               "format": "binary",
               "variant": "operation",
-              "operation": "like",
-              "right": {
+              "operation": "or",
+              "left": {
                 "type": "expression",
                 "format": "binary",
                 "variant": "operation",
-                "operation": "or",
-                "left": {
+                "operation": "like",
+                "right": {
                   "type": "literal",
                   "variant": "text",
                   "value": "CVE-%"
                 },
-                "right": {
-                  "type": "expression",
-                  "format": "binary",
-                  "variant": "operation",
-                  "operation": "like",
-                  "right": {
-                    "type": "literal",
-                    "variant": "text",
-                    "value": "TEMP-%"
-                  },
-                  "left": {
-                    "type": "identifier",
-                    "variant": "column",
-                    "name": "st.bug_name"
-                  }
+                "left": {
+                  "type": "identifier",
+                  "variant": "column",
+                  "name": "st.bug_name"
                 }
               },
-              "left": {
-                "type": "identifier",
-                "variant": "column",
-                "name": "st.bug_name"
+              "right": {
+                "type": "expression",
+                "format": "binary",
+                "variant": "operation",
+                "operation": "like",
+                "right": {
+                  "type": "literal",
+                  "variant": "text",
+                  "value": "TEMP-%"
+                },
+                "left": {
+                  "type": "identifier",
+                  "variant": "column",
+                  "name": "st.bug_name"
+                }
               }
             }
           },

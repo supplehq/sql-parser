@@ -233,16 +233,106 @@
           "type": "expression",
           "format": "binary",
           "variant": "operation",
-          "operation": "match",
+          "operation": "and",
+          "left": {
+            "type": "expression",
+            "format": "binary",
+            "variant": "operation",
+            "operation": "match",
+            "right": {
+              "type": "literal",
+              "variant": "text",
+              "value": "amstedam*"
+            },
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "word"
+            }
+          },
           "right": {
+            "type": "expression",
+            "format": "binary",
+            "variant": "operation",
+            "operation": "=",
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "top"
+            },
+            "right": {
+              "type": "literal",
+              "variant": "decimal",
+              "value": "3"
+            }
+          }
+        }
+      ],
+      "order": [
+        {
+          "type": "expression",
+          "format": "unary",
+          "variant": "operation",
+          "expression": {
+            "type": "identifier",
+            "variant": "column",
+            "name": "word"
+          },
+          "operator": "+"
+        }
+      ]
+    },
+    {
+      "type": "statement",
+      "variant": "select",
+      "result": [
+        {
+          "type": "identifier",
+          "variant": "column",
+          "name": "word"
+        },
+        {
+          "type": "identifier",
+          "variant": "column",
+          "name": "distance"
+        },
+        {
+          "type": "identifier",
+          "variant": "column",
+          "name": "matchlen"
+        }
+      ],
+      "from": {
+        "type": "identifier",
+        "variant": "table",
+        "name": "demo"
+      },
+      "where": [
+        {
+          "type": "expression",
+          "format": "binary",
+          "variant": "operation",
+          "operation": "and",
+          "left": {
             "type": "expression",
             "format": "binary",
             "variant": "operation",
             "operation": "and",
             "left": {
-              "type": "literal",
-              "variant": "text",
-              "value": "amstedam*"
+              "type": "expression",
+              "format": "binary",
+              "variant": "operation",
+              "operation": "match",
+              "right": {
+                "type": "literal",
+                "variant": "text",
+                "value": "amstedam*"
+              },
+              "left": {
+                "type": "identifier",
+                "variant": "column",
+                "name": "word"
+              }
             },
             "right": {
               "type": "expression",
@@ -261,111 +351,21 @@
               }
             }
           },
-          "left": {
-            "type": "identifier",
-            "variant": "column",
-            "name": "word"
-          }
-        }
-      ],
-      "order": [
-        {
-          "type": "expression",
-          "format": "unary",
-          "variant": "operation",
-          "expression": {
-            "type": "identifier",
-            "variant": "column",
-            "name": "word"
-          },
-          "operator": "+"
-        }
-      ]
-    },
-    {
-      "type": "statement",
-      "variant": "select",
-      "result": [
-        {
-          "type": "identifier",
-          "variant": "column",
-          "name": "word"
-        },
-        {
-          "type": "identifier",
-          "variant": "column",
-          "name": "distance"
-        },
-        {
-          "type": "identifier",
-          "variant": "column",
-          "name": "matchlen"
-        }
-      ],
-      "from": {
-        "type": "identifier",
-        "variant": "table",
-        "name": "demo"
-      },
-      "where": [
-        {
-          "type": "expression",
-          "format": "binary",
-          "variant": "operation",
-          "operation": "match",
           "right": {
             "type": "expression",
             "format": "binary",
             "variant": "operation",
-            "operation": "and",
+            "operation": "<=",
             "left": {
-              "type": "expression",
-              "format": "binary",
-              "variant": "operation",
-              "operation": "and",
-              "left": {
-                "type": "literal",
-                "variant": "text",
-                "value": "amstedam*"
-              },
-              "right": {
-                "type": "expression",
-                "format": "binary",
-                "variant": "operation",
-                "operation": "=",
-                "left": {
-                  "type": "identifier",
-                  "variant": "column",
-                  "name": "top"
-                },
-                "right": {
-                  "type": "literal",
-                  "variant": "decimal",
-                  "value": "3"
-                }
-              }
+              "type": "identifier",
+              "variant": "column",
+              "name": "distance"
             },
             "right": {
-              "type": "expression",
-              "format": "binary",
-              "variant": "operation",
-              "operation": "<=",
-              "left": {
-                "type": "identifier",
-                "variant": "column",
-                "name": "distance"
-              },
-              "right": {
-                "type": "literal",
-                "variant": "decimal",
-                "value": "100"
-              }
+              "type": "literal",
+              "variant": "decimal",
+              "value": "100"
             }
-          },
-          "left": {
-            "type": "identifier",
-            "variant": "column",
-            "name": "word"
           }
         }
       ],
@@ -413,38 +413,38 @@
           "type": "expression",
           "format": "binary",
           "variant": "operation",
-          "operation": "match",
-          "right": {
+          "operation": "and",
+          "left": {
             "type": "expression",
             "format": "binary",
             "variant": "operation",
-            "operation": "and",
-            "left": {
+            "operation": "match",
+            "right": {
               "type": "literal",
               "variant": "text",
               "value": "amstedam*"
             },
-            "right": {
-              "type": "expression",
-              "format": "binary",
-              "variant": "operation",
-              "operation": "<=",
-              "left": {
-                "type": "identifier",
-                "variant": "column",
-                "name": "distance"
-              },
-              "right": {
-                "type": "literal",
-                "variant": "decimal",
-                "value": "100"
-              }
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "word"
             }
           },
-          "left": {
-            "type": "identifier",
-            "variant": "column",
-            "name": "word"
+          "right": {
+            "type": "expression",
+            "format": "binary",
+            "variant": "operation",
+            "operation": "<=",
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "distance"
+            },
+            "right": {
+              "type": "literal",
+              "variant": "decimal",
+              "value": "100"
+            }
           }
         }
       ],
@@ -532,38 +532,38 @@
           "type": "expression",
           "format": "binary",
           "variant": "operation",
-          "operation": "match",
-          "right": {
+          "operation": "and",
+          "left": {
             "type": "expression",
             "format": "binary",
             "variant": "operation",
-            "operation": "and",
-            "left": {
+            "operation": "match",
+            "right": {
               "type": "literal",
               "variant": "text",
               "value": "amstedam*"
             },
-            "right": {
-              "type": "expression",
-              "format": "binary",
-              "variant": "operation",
-              "operation": "<=",
-              "left": {
-                "type": "identifier",
-                "variant": "column",
-                "name": "distance"
-              },
-              "right": {
-                "type": "literal",
-                "variant": "decimal",
-                "value": "100"
-              }
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "word"
             }
           },
-          "left": {
-            "type": "identifier",
-            "variant": "column",
-            "name": "word"
+          "right": {
+            "type": "expression",
+            "format": "binary",
+            "variant": "operation",
+            "operation": "<=",
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "distance"
+            },
+            "right": {
+              "type": "literal",
+              "variant": "decimal",
+              "value": "100"
+            }
           }
         }
       ]
@@ -596,8 +596,8 @@
           "type": "expression",
           "format": "binary",
           "variant": "operation",
-          "operation": "match",
-          "right": {
+          "operation": "and",
+          "left": {
             "type": "expression",
             "format": "binary",
             "variant": "operation",
@@ -606,50 +606,50 @@
               "type": "expression",
               "format": "binary",
               "variant": "operation",
-              "operation": "and",
-              "left": {
+              "operation": "match",
+              "right": {
                 "type": "literal",
                 "variant": "text",
                 "value": "amstedam*"
               },
-              "right": {
-                "type": "expression",
-                "format": "binary",
-                "variant": "operation",
-                "operation": "<=",
-                "left": {
-                  "type": "identifier",
-                  "variant": "column",
-                  "name": "distance"
-                },
-                "right": {
-                  "type": "literal",
-                  "variant": "decimal",
-                  "value": "100"
-                }
+              "left": {
+                "type": "identifier",
+                "variant": "column",
+                "name": "word"
               }
             },
             "right": {
               "type": "expression",
               "format": "binary",
               "variant": "operation",
-              "operation": "=",
+              "operation": "<=",
               "left": {
                 "type": "identifier",
                 "variant": "column",
-                "name": "top"
+                "name": "distance"
               },
               "right": {
                 "type": "literal",
                 "variant": "decimal",
-                "value": "20"
+                "value": "100"
               }
             }
           },
-          "left": {
-            "type": "identifier",
-            "variant": "column",
-            "name": "word"
+          "right": {
+            "type": "expression",
+            "format": "binary",
+            "variant": "operation",
+            "operation": "=",
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "top"
+            },
+            "right": {
+              "type": "literal",
+              "variant": "decimal",
+              "value": "20"
+            }
           }
         }
       ]
@@ -684,38 +684,38 @@
           "type": "expression",
           "format": "binary",
           "variant": "operation",
-          "operation": "match",
-          "right": {
+          "operation": "and",
+          "left": {
             "type": "expression",
             "format": "binary",
             "variant": "operation",
-            "operation": "and",
-            "left": {
+            "operation": "match",
+            "right": {
               "type": "literal",
               "variant": "text",
               "value": "amstedam*"
             },
-            "right": {
-              "type": "expression",
-              "format": "binary",
-              "variant": "operation",
-              "operation": "<=",
-              "left": {
-                "type": "identifier",
-                "variant": "column",
-                "name": "distance"
-              },
-              "right": {
-                "type": "literal",
-                "variant": "decimal",
-                "value": "100"
-              }
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "word"
             }
           },
-          "left": {
-            "type": "identifier",
-            "variant": "column",
-            "name": "word"
+          "right": {
+            "type": "expression",
+            "format": "binary",
+            "variant": "operation",
+            "operation": "<=",
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "distance"
+            },
+            "right": {
+              "type": "literal",
+              "variant": "decimal",
+              "value": "100"
+            }
           }
         }
       ],
@@ -762,8 +762,8 @@
           "type": "expression",
           "format": "binary",
           "variant": "operation",
-          "operation": "match",
-          "right": {
+          "operation": "and",
+          "left": {
             "type": "expression",
             "format": "binary",
             "variant": "operation",
@@ -772,50 +772,50 @@
               "type": "expression",
               "format": "binary",
               "variant": "operation",
-              "operation": "and",
-              "left": {
+              "operation": "match",
+              "right": {
                 "type": "literal",
                 "variant": "text",
                 "value": "amstedam*"
               },
-              "right": {
-                "type": "expression",
-                "format": "binary",
-                "variant": "operation",
-                "operation": "<=",
-                "left": {
-                  "type": "identifier",
-                  "variant": "column",
-                  "name": "distance"
-                },
-                "right": {
-                  "type": "literal",
-                  "variant": "decimal",
-                  "value": "100"
-                }
+              "left": {
+                "type": "identifier",
+                "variant": "column",
+                "name": "word"
               }
             },
             "right": {
               "type": "expression",
               "format": "binary",
               "variant": "operation",
-              "operation": "=",
+              "operation": "<=",
               "left": {
                 "type": "identifier",
                 "variant": "column",
-                "name": "top"
+                "name": "distance"
               },
               "right": {
                 "type": "literal",
                 "variant": "decimal",
-                "value": "20"
+                "value": "100"
               }
             }
           },
-          "left": {
-            "type": "identifier",
-            "variant": "column",
-            "name": "word"
+          "right": {
+            "type": "expression",
+            "format": "binary",
+            "variant": "operation",
+            "operation": "=",
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "top"
+            },
+            "right": {
+              "type": "literal",
+              "variant": "decimal",
+              "value": "20"
+            }
           }
         }
       ],

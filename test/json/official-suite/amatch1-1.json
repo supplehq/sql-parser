@@ -714,38 +714,38 @@
           "type": "expression",
           "format": "binary",
           "variant": "operation",
-          "operation": "match",
-          "right": {
+          "operation": "and",
+          "left": {
             "type": "expression",
             "format": "binary",
             "variant": "operation",
-            "operation": "and",
-            "left": {
+            "operation": "match",
+            "right": {
               "type": "literal",
               "variant": "text",
               "value": "josxph"
             },
-            "right": {
-              "type": "expression",
-              "format": "binary",
-              "variant": "operation",
-              "operation": "<",
-              "left": {
-                "type": "identifier",
-                "variant": "column",
-                "name": "distance"
-              },
-              "right": {
-                "type": "literal",
-                "variant": "decimal",
-                "value": "300"
-              }
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "word"
             }
           },
-          "left": {
-            "type": "identifier",
-            "variant": "column",
-            "name": "word"
+          "right": {
+            "type": "expression",
+            "format": "binary",
+            "variant": "operation",
+            "operation": "<",
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "distance"
+            },
+            "right": {
+              "type": "literal",
+              "variant": "decimal",
+              "value": "300"
+            }
           }
         }
       ]
@@ -775,38 +775,38 @@
           "type": "expression",
           "format": "binary",
           "variant": "operation",
-          "operation": "match",
-          "right": {
+          "operation": "and",
+          "left": {
             "type": "expression",
             "format": "binary",
             "variant": "operation",
-            "operation": "and",
-            "left": {
+            "operation": "match",
+            "right": {
               "type": "literal",
               "variant": "text",
               "value": "josxph"
             },
-            "right": {
-              "type": "expression",
-              "format": "binary",
-              "variant": "operation",
-              "operation": "<",
-              "left": {
-                "type": "identifier",
-                "variant": "column",
-                "name": "distance"
-              },
-              "right": {
-                "type": "literal",
-                "variant": "decimal",
-                "value": "300"
-              }
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "word"
             }
           },
-          "left": {
-            "type": "identifier",
-            "variant": "column",
-            "name": "word"
+          "right": {
+            "type": "expression",
+            "format": "binary",
+            "variant": "operation",
+            "operation": "<",
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "distance"
+            },
+            "right": {
+              "type": "literal",
+              "variant": "decimal",
+              "value": "300"
+            }
           }
         }
       ]
@@ -892,38 +892,38 @@
           "type": "expression",
           "format": "binary",
           "variant": "operation",
-          "operation": "match",
-          "right": {
+          "operation": "and",
+          "left": {
             "type": "expression",
             "format": "binary",
             "variant": "operation",
-            "operation": "and",
-            "left": {
+            "operation": "match",
+            "right": {
               "type": "literal",
               "variant": "text",
               "value": "josxph"
             },
-            "right": {
-              "type": "expression",
-              "format": "binary",
-              "variant": "operation",
-              "operation": "<",
-              "left": {
-                "type": "identifier",
-                "variant": "column",
-                "name": "distance"
-              },
-              "right": {
-                "type": "literal",
-                "variant": "decimal",
-                "value": "300"
-              }
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "word"
             }
           },
-          "left": {
-            "type": "identifier",
-            "variant": "column",
-            "name": "word"
+          "right": {
+            "type": "expression",
+            "format": "binary",
+            "variant": "operation",
+            "operation": "<",
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "distance"
+            },
+            "right": {
+              "type": "literal",
+              "variant": "decimal",
+              "value": "300"
+            }
           }
         }
       ]
@@ -953,38 +953,38 @@
           "type": "expression",
           "format": "binary",
           "variant": "operation",
-          "operation": "match",
-          "right": {
+          "operation": "and",
+          "left": {
             "type": "expression",
             "format": "binary",
             "variant": "operation",
-            "operation": "and",
-            "left": {
+            "operation": "match",
+            "right": {
               "type": "literal",
               "variant": "text",
               "value": "joxxph"
             },
-            "right": {
-              "type": "expression",
-              "format": "binary",
-              "variant": "operation",
-              "operation": "<=",
-              "left": {
-                "type": "identifier",
-                "variant": "column",
-                "name": "distance"
-              },
-              "right": {
-                "type": "literal",
-                "variant": "decimal",
-                "value": "300"
-              }
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "word"
             }
           },
-          "left": {
-            "type": "identifier",
-            "variant": "column",
-            "name": "word"
+          "right": {
+            "type": "expression",
+            "format": "binary",
+            "variant": "operation",
+            "operation": "<=",
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "distance"
+            },
+            "right": {
+              "type": "literal",
+              "variant": "decimal",
+              "value": "300"
+            }
           }
         }
       ]
@@ -1014,38 +1014,38 @@
           "type": "expression",
           "format": "binary",
           "variant": "operation",
-          "operation": "match",
-          "right": {
+          "operation": "and",
+          "left": {
             "type": "expression",
             "format": "binary",
             "variant": "operation",
-            "operation": "and",
-            "left": {
+            "operation": "match",
+            "right": {
               "type": "literal",
               "variant": "text",
               "value": "joxxph"
             },
-            "right": {
-              "type": "expression",
-              "format": "binary",
-              "variant": "operation",
-              "operation": "<=",
-              "left": {
-                "type": "identifier",
-                "variant": "column",
-                "name": "distance"
-              },
-              "right": {
-                "type": "literal",
-                "variant": "decimal",
-                "value": "300"
-              }
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "word"
             }
           },
-          "left": {
-            "type": "identifier",
-            "variant": "column",
-            "name": "word"
+          "right": {
+            "type": "expression",
+            "format": "binary",
+            "variant": "operation",
+            "operation": "<=",
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "distance"
+            },
+            "right": {
+              "type": "literal",
+              "variant": "decimal",
+              "value": "300"
+            }
           }
         }
       ]
@@ -1075,38 +1075,38 @@
           "type": "expression",
           "format": "binary",
           "variant": "operation",
-          "operation": "match",
-          "right": {
+          "operation": "and",
+          "left": {
             "type": "expression",
             "format": "binary",
             "variant": "operation",
-            "operation": "and",
-            "left": {
+            "operation": "match",
+            "right": {
               "type": "literal",
               "variant": "text",
               "value": "joxxph"
             },
-            "right": {
-              "type": "expression",
-              "format": "binary",
-              "variant": "operation",
-              "operation": "<",
-              "left": {
-                "type": "identifier",
-                "variant": "column",
-                "name": "distance"
-              },
-              "right": {
-                "type": "literal",
-                "variant": "decimal",
-                "value": "300"
-              }
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "word"
             }
           },
-          "left": {
-            "type": "identifier",
-            "variant": "column",
-            "name": "word"
+          "right": {
+            "type": "expression",
+            "format": "binary",
+            "variant": "operation",
+            "operation": "<",
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "distance"
+            },
+            "right": {
+              "type": "literal",
+              "variant": "decimal",
+              "value": "300"
+            }
           }
         }
       ]
@@ -1136,38 +1136,38 @@
           "type": "expression",
           "format": "binary",
           "variant": "operation",
-          "operation": "match",
-          "right": {
+          "operation": "and",
+          "left": {
             "type": "expression",
             "format": "binary",
             "variant": "operation",
-            "operation": "and",
-            "left": {
+            "operation": "match",
+            "right": {
               "type": "literal",
               "variant": "text",
               "value": "joxxph"
             },
-            "right": {
-              "type": "expression",
-              "format": "binary",
-              "variant": "operation",
-              "operation": "<",
-              "left": {
-                "type": "identifier",
-                "variant": "column",
-                "name": "distance"
-              },
-              "right": {
-                "type": "literal",
-                "variant": "decimal",
-                "value": "300"
-              }
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "word"
             }
           },
-          "left": {
-            "type": "identifier",
-            "variant": "column",
-            "name": "word"
+          "right": {
+            "type": "expression",
+            "format": "binary",
+            "variant": "operation",
+            "operation": "<",
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "distance"
+            },
+            "right": {
+              "type": "literal",
+              "variant": "decimal",
+              "value": "300"
+            }
           }
         }
       ]

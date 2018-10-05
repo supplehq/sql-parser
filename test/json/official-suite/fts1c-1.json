@@ -578,44 +578,44 @@
           "type": "expression",
           "format": "binary",
           "variant": "operation",
-          "operation": "match",
-          "right": {
+          "operation": "and",
+          "left": {
             "type": "expression",
             "format": "binary",
             "variant": "operation",
-            "operation": "and",
-            "left": {
+            "operation": "match",
+            "right": {
               "type": "literal",
               "variant": "text",
               "value": "child product"
             },
-            "right": {
-              "type": "expression",
-              "format": "binary",
-              "variant": "operation",
-              "operation": "=",
-              "left": {
-                "type": "expression",
-                "format": "unary",
-                "variant": "operation",
-                "expression": {
-                  "type": "identifier",
-                  "variant": "column",
-                  "name": "rowid"
-                },
-                "operator": "+"
-              },
-              "right": {
-                "type": "literal",
-                "variant": "decimal",
-                "value": "32"
-              }
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "body"
             }
           },
-          "left": {
-            "type": "identifier",
-            "variant": "column",
-            "name": "body"
+          "right": {
+            "type": "expression",
+            "format": "binary",
+            "variant": "operation",
+            "operation": "=",
+            "left": {
+              "type": "expression",
+              "format": "unary",
+              "variant": "operation",
+              "expression": {
+                "type": "identifier",
+                "variant": "column",
+                "name": "rowid"
+              },
+              "operator": "+"
+            },
+            "right": {
+              "type": "literal",
+              "variant": "decimal",
+              "value": "32"
+            }
           }
         }
       ]

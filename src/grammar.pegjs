@@ -638,7 +638,7 @@ expression_postfix_tail
 
 expression_like "Comparison Expression"
   = n:( expression_is_not )?
-    m:( LIKE / GLOB / REGEXP / MATCH ) o e:( expression ) o
+    m:( LIKE / GLOB / REGEXP / MATCH ) o e:( expression_postfix ) o
     x:( expression_escape )? {
     return Object.assign({
       'type': 'expression',
@@ -649,7 +649,7 @@ expression_like "Comparison Expression"
     }, x);
   }
 expression_escape "ESCAPE Expression"
-  = s:( ESCAPE ) o e:( expression ) o
+  = s:( ESCAPE ) o e:( expression_postfix ) o
   {
     return {
       'escape': e

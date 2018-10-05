@@ -679,38 +679,38 @@
           "type": "expression",
           "format": "binary",
           "variant": "operation",
-          "operation": "glob",
-          "right": {
+          "operation": "and",
+          "left": {
             "type": "expression",
             "format": "binary",
             "variant": "operation",
-            "operation": "and",
-            "left": {
+            "operation": "glob",
+            "right": {
               "type": "literal",
               "variant": "text",
               "value": "ab*"
             },
-            "right": {
-              "type": "expression",
-              "format": "binary",
-              "variant": "operation",
-              "operation": ">=",
-              "left": {
-                "type": "identifier",
-                "variant": "column",
-                "name": "b"
-              },
-              "right": {
-                "type": "literal",
-                "variant": "blob",
-                "value": "6162"
-              }
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "b"
             }
           },
-          "left": {
-            "type": "identifier",
-            "variant": "column",
-            "name": "b"
+          "right": {
+            "type": "expression",
+            "format": "binary",
+            "variant": "operation",
+            "operation": ">=",
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "b"
+            },
+            "right": {
+              "type": "literal",
+              "variant": "blob",
+              "value": "6162"
+            }
           }
         }
       ]
@@ -740,50 +740,50 @@
           "type": "expression",
           "format": "binary",
           "variant": "operation",
-          "operation": "glob",
-          "right": {
+          "operation": "and",
+          "left": {
             "type": "expression",
             "format": "binary",
             "variant": "operation",
-            "operation": "and",
-            "left": {
+            "operation": "glob",
+            "right": {
               "type": "literal",
               "variant": "text",
               "value": "ab*"
             },
-            "right": {
+            "left": {
               "type": "expression",
-              "format": "binary",
+              "format": "unary",
               "variant": "operation",
-              "operation": ">=",
-              "left": {
-                "type": "expression",
-                "format": "unary",
-                "variant": "operation",
-                "expression": {
-                  "type": "identifier",
-                  "variant": "column",
-                  "name": "b"
-                },
-                "operator": "+"
+              "expression": {
+                "type": "identifier",
+                "variant": "column",
+                "name": "b"
               },
-              "right": {
-                "type": "literal",
-                "variant": "blob",
-                "value": "6162"
-              }
+              "operator": "+"
             }
           },
-          "left": {
+          "right": {
             "type": "expression",
-            "format": "unary",
+            "format": "binary",
             "variant": "operation",
-            "expression": {
-              "type": "identifier",
-              "variant": "column",
-              "name": "b"
+            "operation": ">=",
+            "left": {
+              "type": "expression",
+              "format": "unary",
+              "variant": "operation",
+              "expression": {
+                "type": "identifier",
+                "variant": "column",
+                "name": "b"
+              },
+              "operator": "+"
             },
-            "operator": "+"
+            "right": {
+              "type": "literal",
+              "variant": "blob",
+              "value": "6162"
+            }
           }
         }
       ]

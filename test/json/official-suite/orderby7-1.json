@@ -289,38 +289,38 @@
           "type": "expression",
           "format": "binary",
           "variant": "operation",
-          "operation": "match",
-          "right": {
+          "operation": "and",
+          "left": {
             "type": "expression",
             "format": "binary",
             "variant": "operation",
-            "operation": "and",
-            "left": {
+            "operation": "match",
+            "right": {
               "type": "literal",
               "variant": "text",
               "value": "that twice"
             },
-            "right": {
-              "type": "expression",
-              "format": "binary",
-              "variant": "operation",
-              "operation": "=",
-              "left": {
-                "type": "identifier",
-                "variant": "column",
-                "name": "content"
-              },
-              "right": {
-                "type": "identifier",
-                "variant": "column",
-                "name": "x"
-              }
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "fts"
             }
           },
-          "left": {
-            "type": "identifier",
-            "variant": "column",
-            "name": "fts"
+          "right": {
+            "type": "expression",
+            "format": "binary",
+            "variant": "operation",
+            "operation": "=",
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "content"
+            },
+            "right": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "x"
+            }
           }
         }
       ],
@@ -373,38 +373,38 @@
           "type": "expression",
           "format": "binary",
           "variant": "operation",
-          "operation": "match",
-          "right": {
+          "operation": "and",
+          "left": {
             "type": "expression",
             "format": "binary",
             "variant": "operation",
-            "operation": "and",
-            "left": {
+            "operation": "match",
+            "right": {
               "type": "literal",
               "variant": "text",
               "value": "that twice"
             },
-            "right": {
-              "type": "expression",
-              "format": "binary",
-              "variant": "operation",
-              "operation": "=",
-              "left": {
-                "type": "identifier",
-                "variant": "column",
-                "name": "content"
-              },
-              "right": {
-                "type": "identifier",
-                "variant": "column",
-                "name": "x"
-              }
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "fts"
             }
           },
-          "left": {
-            "type": "identifier",
-            "variant": "column",
-            "name": "fts"
+          "right": {
+            "type": "expression",
+            "format": "binary",
+            "variant": "operation",
+            "operation": "=",
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "content"
+            },
+            "right": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "x"
+            }
           }
         }
       ],
@@ -452,38 +452,38 @@
           "type": "expression",
           "format": "binary",
           "variant": "operation",
-          "operation": "match",
-          "right": {
+          "operation": "and",
+          "left": {
             "type": "expression",
             "format": "binary",
             "variant": "operation",
-            "operation": "and",
-            "left": {
+            "operation": "match",
+            "right": {
               "type": "literal",
               "variant": "text",
               "value": "that twice"
             },
-            "right": {
-              "type": "expression",
-              "format": "binary",
-              "variant": "operation",
-              "operation": "=",
-              "left": {
-                "type": "identifier",
-                "variant": "column",
-                "name": "content"
-              },
-              "right": {
-                "type": "identifier",
-                "variant": "column",
-                "name": "x"
-              }
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "fts"
             }
           },
-          "left": {
-            "type": "identifier",
-            "variant": "column",
-            "name": "fts"
+          "right": {
+            "type": "expression",
+            "format": "binary",
+            "variant": "operation",
+            "operation": "=",
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "content"
+            },
+            "right": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "x"
+            }
           }
         }
       ],
@@ -530,38 +530,38 @@
           "type": "expression",
           "format": "binary",
           "variant": "operation",
-          "operation": "match",
-          "right": {
+          "operation": "and",
+          "left": {
             "type": "expression",
             "format": "binary",
             "variant": "operation",
-            "operation": "and",
-            "left": {
+            "operation": "match",
+            "right": {
               "type": "literal",
               "variant": "text",
               "value": "that twice"
             },
-            "right": {
-              "type": "expression",
-              "format": "binary",
-              "variant": "operation",
-              "operation": "=",
-              "left": {
-                "type": "identifier",
-                "variant": "column",
-                "name": "content"
-              },
-              "right": {
-                "type": "identifier",
-                "variant": "column",
-                "name": "x"
-              }
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "fts"
             }
           },
-          "left": {
-            "type": "identifier",
-            "variant": "column",
-            "name": "fts"
+          "right": {
+            "type": "expression",
+            "format": "binary",
+            "variant": "operation",
+            "operation": "=",
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "content"
+            },
+            "right": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "x"
+            }
           }
         }
       ],
@@ -609,38 +609,38 @@
           "type": "expression",
           "format": "binary",
           "variant": "operation",
-          "operation": "match",
-          "right": {
+          "operation": "and",
+          "left": {
             "type": "expression",
             "format": "binary",
             "variant": "operation",
-            "operation": "and",
-            "left": {
+            "operation": "match",
+            "right": {
               "type": "literal",
               "variant": "text",
               "value": "that twice"
             },
-            "right": {
-              "type": "expression",
-              "format": "binary",
-              "variant": "operation",
-              "operation": "=",
-              "left": {
-                "type": "identifier",
-                "variant": "column",
-                "name": "content"
-              },
-              "right": {
-                "type": "identifier",
-                "variant": "column",
-                "name": "x"
-              }
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "fts"
             }
           },
-          "left": {
-            "type": "identifier",
-            "variant": "column",
-            "name": "fts"
+          "right": {
+            "type": "expression",
+            "format": "binary",
+            "variant": "operation",
+            "operation": "=",
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "content"
+            },
+            "right": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "x"
+            }
           }
         }
       ]
@@ -680,38 +680,38 @@
           "type": "expression",
           "format": "binary",
           "variant": "operation",
-          "operation": "match",
-          "right": {
+          "operation": "and",
+          "left": {
             "type": "expression",
             "format": "binary",
             "variant": "operation",
-            "operation": "and",
-            "left": {
+            "operation": "match",
+            "right": {
               "type": "literal",
               "variant": "text",
               "value": "that twice"
             },
-            "right": {
-              "type": "expression",
-              "format": "binary",
-              "variant": "operation",
-              "operation": "=",
-              "left": {
-                "type": "identifier",
-                "variant": "column",
-                "name": "content"
-              },
-              "right": {
-                "type": "identifier",
-                "variant": "column",
-                "name": "x"
-              }
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "fts"
             }
           },
-          "left": {
-            "type": "identifier",
-            "variant": "column",
-            "name": "fts"
+          "right": {
+            "type": "expression",
+            "format": "binary",
+            "variant": "operation",
+            "operation": "=",
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "content"
+            },
+            "right": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "x"
+            }
           }
         }
       ]

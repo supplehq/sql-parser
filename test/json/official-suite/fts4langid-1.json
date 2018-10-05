@@ -552,38 +552,38 @@
           "type": "expression",
           "format": "binary",
           "variant": "operation",
-          "operation": "match",
-          "right": {
+          "operation": "and",
+          "left": {
             "type": "expression",
             "format": "binary",
             "variant": "operation",
-            "operation": "and",
-            "left": {
+            "operation": "match",
+            "right": {
               "type": "literal",
               "variant": "text",
               "value": "b"
             },
-            "right": {
-              "type": "expression",
-              "format": "binary",
-              "variant": "operation",
-              "operation": "=",
-              "left": {
-                "type": "identifier",
-                "variant": "column",
-                "name": "lang_id"
-              },
-              "right": {
-                "type": "literal",
-                "variant": "decimal",
-                "value": "0"
-              }
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "t1"
             }
           },
-          "left": {
-            "type": "identifier",
-            "variant": "column",
-            "name": "t1"
+          "right": {
+            "type": "expression",
+            "format": "binary",
+            "variant": "operation",
+            "operation": "=",
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "lang_id"
+            },
+            "right": {
+              "type": "literal",
+              "variant": "decimal",
+              "value": "0"
+            }
           }
         }
       ]
@@ -608,38 +608,38 @@
           "type": "expression",
           "format": "binary",
           "variant": "operation",
-          "operation": "match",
-          "right": {
+          "operation": "and",
+          "left": {
             "type": "expression",
             "format": "binary",
             "variant": "operation",
-            "operation": "and",
-            "left": {
+            "operation": "match",
+            "right": {
               "type": "literal",
               "variant": "text",
               "value": "b"
             },
-            "right": {
-              "type": "expression",
-              "format": "binary",
-              "variant": "operation",
-              "operation": "=",
-              "left": {
-                "type": "identifier",
-                "variant": "column",
-                "name": "lang_id"
-              },
-              "right": {
-                "type": "literal",
-                "variant": "decimal",
-                "value": "1"
-              }
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "t1"
             }
           },
-          "left": {
-            "type": "identifier",
-            "variant": "column",
-            "name": "t1"
+          "right": {
+            "type": "expression",
+            "format": "binary",
+            "variant": "operation",
+            "operation": "=",
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "lang_id"
+            },
+            "right": {
+              "type": "literal",
+              "variant": "decimal",
+              "value": "1"
+            }
           }
         }
       ]
@@ -2375,38 +2375,38 @@
           "type": "expression",
           "format": "binary",
           "variant": "operation",
-          "operation": "match",
-          "right": {
+          "operation": "and",
+          "left": {
             "type": "expression",
             "format": "binary",
             "variant": "operation",
-            "operation": "and",
-            "left": {
+            "operation": "match",
+            "right": {
               "type": "literal",
               "variant": "text",
               "value": "quick"
             },
-            "right": {
-              "type": "expression",
-              "format": "binary",
-              "variant": "operation",
-              "operation": "=",
-              "left": {
-                "type": "identifier",
-                "variant": "column",
-                "name": "lid"
-              },
-              "right": {
-                "type": "literal",
-                "variant": "decimal",
-                "value": "1"
-              }
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "t4"
             }
           },
-          "left": {
-            "type": "identifier",
-            "variant": "column",
-            "name": "t4"
+          "right": {
+            "type": "expression",
+            "format": "binary",
+            "variant": "operation",
+            "operation": "=",
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "lid"
+            },
+            "right": {
+              "type": "literal",
+              "variant": "decimal",
+              "value": "1"
+            }
           }
         }
       ]
@@ -2431,38 +2431,38 @@
           "type": "expression",
           "format": "binary",
           "variant": "operation",
-          "operation": "match",
-          "right": {
+          "operation": "and",
+          "left": {
             "type": "expression",
             "format": "binary",
             "variant": "operation",
-            "operation": "and",
-            "left": {
+            "operation": "match",
+            "right": {
               "type": "literal",
               "variant": "text",
               "value": "Quick"
             },
-            "right": {
-              "type": "expression",
-              "format": "binary",
-              "variant": "operation",
-              "operation": "=",
-              "left": {
-                "type": "identifier",
-                "variant": "column",
-                "name": "lid"
-              },
-              "right": {
-                "type": "literal",
-                "variant": "decimal",
-                "value": "1"
-              }
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "t4"
             }
           },
-          "left": {
-            "type": "identifier",
-            "variant": "column",
-            "name": "t4"
+          "right": {
+            "type": "expression",
+            "format": "binary",
+            "variant": "operation",
+            "operation": "=",
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "lid"
+            },
+            "right": {
+              "type": "literal",
+              "variant": "decimal",
+              "value": "1"
+            }
           }
         }
       ]
@@ -2793,38 +2793,38 @@
           "type": "expression",
           "format": "binary",
           "variant": "operation",
-          "operation": "match",
-          "right": {
+          "operation": "and",
+          "left": {
             "type": "expression",
             "format": "binary",
             "variant": "operation",
-            "operation": "and",
-            "left": {
+            "operation": "match",
+            "right": {
               "type": "literal",
               "variant": "text",
               "value": "belong"
             },
-            "right": {
-              "type": "expression",
-              "format": "binary",
-              "variant": "operation",
-              "operation": "=",
-              "left": {
-                "type": "identifier",
-                "variant": "column",
-                "name": "lid"
-              },
-              "right": {
-                "type": "identifier",
-                "variant": "column",
-                "name": "sub_lid"
-              }
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "t6"
             }
           },
-          "left": {
-            "type": "identifier",
-            "variant": "column",
-            "name": "t6"
+          "right": {
+            "type": "expression",
+            "format": "binary",
+            "variant": "operation",
+            "operation": "=",
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "lid"
+            },
+            "right": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "sub_lid"
+            }
           }
         }
       ]
@@ -2914,38 +2914,38 @@
           "type": "expression",
           "format": "binary",
           "variant": "operation",
-          "operation": "match",
-          "right": {
+          "operation": "and",
+          "left": {
             "type": "expression",
             "format": "binary",
             "variant": "operation",
-            "operation": "and",
-            "left": {
+            "operation": "match",
+            "right": {
               "type": "literal",
               "variant": "text",
               "value": "belong"
             },
-            "right": {
-              "type": "expression",
-              "format": "binary",
-              "variant": "operation",
-              "operation": "=",
-              "left": {
-                "type": "identifier",
-                "variant": "column",
-                "name": "lid"
-              },
-              "right": {
-                "type": "identifier",
-                "variant": "column",
-                "name": "sub_lid"
-              }
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "t6"
             }
           },
-          "left": {
-            "type": "identifier",
-            "variant": "column",
-            "name": "t6"
+          "right": {
+            "type": "expression",
+            "format": "binary",
+            "variant": "operation",
+            "operation": "=",
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "lid"
+            },
+            "right": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "sub_lid"
+            }
           }
         }
       ]

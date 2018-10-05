@@ -442,16 +442,27 @@
             "type": "expression",
             "format": "binary",
             "variant": "operation",
-            "operation": "like",
-            "right": {
+            "operation": "or",
+            "left": {
               "type": "expression",
               "format": "binary",
               "variant": "operation",
               "operation": "or",
               "left": {
-                "type": "literal",
-                "variant": "text",
-                "value": "%BT DIRECT%"
+                "type": "expression",
+                "format": "binary",
+                "variant": "operation",
+                "operation": "like",
+                "right": {
+                  "type": "literal",
+                  "variant": "text",
+                  "value": "%BT DIRECT%"
+                },
+                "left": {
+                  "type": "identifier",
+                  "variant": "column",
+                  "name": "description"
+                }
               },
               "right": {
                 "type": "expression",
@@ -459,31 +470,9 @@
                 "variant": "operation",
                 "operation": "like",
                 "right": {
-                  "type": "expression",
-                  "format": "binary",
-                  "variant": "operation",
-                  "operation": "or",
-                  "left": {
-                    "type": "literal",
-                    "variant": "text",
-                    "value": "%SUPANET%"
-                  },
-                  "right": {
-                    "type": "expression",
-                    "format": "binary",
-                    "variant": "operation",
-                    "operation": "like",
-                    "right": {
-                      "type": "literal",
-                      "variant": "text",
-                      "value": "%ORANGE%"
-                    },
-                    "left": {
-                      "type": "identifier",
-                      "variant": "column",
-                      "name": "description"
-                    }
-                  }
+                  "type": "literal",
+                  "variant": "text",
+                  "value": "%SUPANET%"
                 },
                 "left": {
                   "type": "identifier",
@@ -492,10 +481,21 @@
                 }
               }
             },
-            "left": {
-              "type": "identifier",
-              "variant": "column",
-              "name": "description"
+            "right": {
+              "type": "expression",
+              "format": "binary",
+              "variant": "operation",
+              "operation": "like",
+              "right": {
+                "type": "literal",
+                "variant": "text",
+                "value": "%ORANGE%"
+              },
+              "left": {
+                "type": "identifier",
+                "variant": "column",
+                "name": "description"
+              }
             }
           }
         ],

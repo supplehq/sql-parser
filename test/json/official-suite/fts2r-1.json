@@ -1240,38 +1240,38 @@
           "type": "expression",
           "format": "binary",
           "variant": "operation",
-          "operation": "match",
-          "right": {
+          "operation": "and",
+          "left": {
             "type": "expression",
             "format": "binary",
             "variant": "operation",
-            "operation": "and",
-            "left": {
+            "operation": "match",
+            "right": {
               "type": "literal",
               "variant": "text",
               "value": "this"
             },
-            "right": {
-              "type": "expression",
-              "format": "binary",
-              "variant": "operation",
-              "operation": "=",
-              "left": {
-                "type": "identifier",
-                "variant": "column",
-                "name": "t1.rowid"
-              },
-              "right": {
-                "type": "identifier",
-                "variant": "column",
-                "name": "t2.id"
-              }
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "t1"
             }
           },
-          "left": {
-            "type": "identifier",
-            "variant": "column",
-            "name": "t1"
+          "right": {
+            "type": "expression",
+            "format": "binary",
+            "variant": "operation",
+            "operation": "=",
+            "left": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "t1.rowid"
+            },
+            "right": {
+              "type": "identifier",
+              "variant": "column",
+              "name": "t2.id"
+            }
           }
         }
       ],
